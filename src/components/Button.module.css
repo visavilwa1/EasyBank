@@ -1,0 +1,15 @@
+.btn {
+    background: linear-gradient(90deg, var(--Lime-Green), var(--Bright-Cyan));
+    border: none;
+    padding: .75rem 2rem;
+    border-radius: 100vw;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn:hover {
+    filter: brightness(150%);
+    color: #d4d4d4;
+}

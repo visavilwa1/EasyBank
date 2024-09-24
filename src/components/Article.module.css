@@ -1,0 +1,50 @@
+.article {
+  width: 90%;
+  margin-inline: auto;
+  background-color: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.articleContent {
+  padding: 2rem 1.5rem;
+}
+
+.article p {
+    color: var(--Grayish-Blue);
+    font-size: .875rem;
+}
+
+.article h3 {
+    font-weight: 400;
+    margin-bottom: .5rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.article h3:hover {
+  color: var(--Bright-Cyan);
+}
+
+.article img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.articleCreator.articleCreator {
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 1000px) {
+  .article h3 {
+    font-size: 1rem;
+  }
+  .article p {
+    font-size: .7rem;
+}
+.article img {
+  height: 12.5rem;
+}
+}

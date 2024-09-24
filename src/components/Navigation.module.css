@@ -1,0 +1,85 @@
+.headerMobile {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5%;
+  padding-block: 2rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 99;
+}
+
+.headerMobile ul {
+  display: none;
+  position: absolute;
+  top: 12vh;
+  left: 10%;
+  background-color: #fff;
+  transform: translateX(-5%);
+  width: 90%;
+  margin-inline: auto;
+  list-style: none;
+  text-align: center;
+  gap: 1rem;
+  padding-block: 1rem;
+  box-shadow: 50px 50px 1000px black;
+  border-radius: 0.5rem;
+  z-index: 2;
+}
+
+.headerMobile li {
+  transform: translateX(-5vw);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.headerMobile li:hover {
+    color: var(--Bright-Cyan);
+}
+
+.mobileUlOpen.mobileUlOpen {
+  display: grid;
+}
+
+.headerDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 11%;
+  padding-block: 1rem;
+
+}
+
+.headerDesktop ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.headerDesktop li {
+  text-transform: capitalize;
+  color: var(--Grayish-Blue);
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  font-size: .875rem;
+}
+
+.headerDesktop li::after {
+  content: "";
+  position: absolute;
+  bottom: -2.75rem;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: var(--Bright-Cyan);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.headerDesktop li:hover {
+  color: #000;
+}
+
+.headerDesktop li:hover::after {
+  opacity: 1;
+}

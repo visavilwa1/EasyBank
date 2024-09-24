@@ -1,0 +1,25 @@
+.benefit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.benefit h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.benefit p {
+    font-size: 0.938rem;
+    max-width: 45ch;
+}
+
+@media (min-width: 1000px) {
+    .benefit {
+        align-items: start;
+        text-align: start;
+        gap: 2rem;
+    }
+}
